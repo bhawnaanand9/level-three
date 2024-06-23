@@ -1,10 +1,12 @@
-// api-server/index.js
 const cors = require("cors");
 const express = require("express");
 const app = express();
 const port = 5000;
-
-app.use(cors());
+const corsOptions = {
+  origin: "*",
+  methods: ["GET", "POST"],
+};
+app.use(cors(corsOptions));
 
 app.get("/questions", (req, res) => {
   const topic = req.query.topic;

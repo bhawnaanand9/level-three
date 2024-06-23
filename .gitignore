@@ -1,4 +1,4 @@
-# Ignore node_modules in the form directory
+
 level-three/node_modules/
 api-server/node_modules/
-# Ignore any other directories or files that should not be committed
+.vercel

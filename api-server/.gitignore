@@ -39,3 +39,4 @@ dist
 .fusebox/
 .dynamodb/
 .tern-port
+.vercel
